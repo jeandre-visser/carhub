@@ -11,6 +11,21 @@
   font-family: 'Manrope', sans-serif;
 }
 
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-clip: padding-box;
+  margin: 15px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #e0dfdf;
+  border-radius: 14px;
+}
+
 /* START: General styles */
 .max-width {
   @apply max-w-[1440px] mx-auto;
