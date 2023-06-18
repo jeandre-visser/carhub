@@ -1,15 +1,12 @@
 'use client';
 
-import { useState } from "react";
-import SearchManufacturer from "./SearchManufacturer";
-
+import { useState } from 'react';
+import SearchManufacturer from './SearchManufacturer';
 
 const SearchBar = () => {
   const [manufacturer, setManuFacturer] = useState('');
 
-  
-  const handleSearch = () => {}
-
+  const handleSearch = () => {};
 
   return (
     <form className='searchbar' onSubmit={handleSearch}>
@@ -41,6 +38,6 @@ const SearchBar = () => {
       {/* <SearchButton otherClasses='max-sm:hidden' /> */}
     </form>
   );
-}
+};
 
-export default SearchBar
+export default SearchBar;
