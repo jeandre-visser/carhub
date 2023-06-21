@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import SearchManufacturer from './SearchManufacturer';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
+import { useRouter } from "next/navigation";
 
 const SearchButton = ({ otherClasses }: { otherClasses: string }) => (
   <button type='submit' className={`-ml-3 z-10 ${otherClasses}`}>
@@ -80,12 +80,12 @@ const SearchBar = () => {
           name='model'
           value={model}
           onChange={(e) => setModel(e.target.value)}
-          placeholder='Tiguan...'
+          placeholder='Macan...'
           className='searchbar__input'
         />
         <SearchButton otherClasses='sm:hidden' />
       </div>
-      {/* <SearchButton otherClasses='max-sm:hidden' /> */}
+      <SearchButton otherClasses='max-sm:hidden' />
     </form>
   );
 };
