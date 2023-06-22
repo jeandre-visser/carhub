@@ -16,10 +16,10 @@ const Navbar = () => {
           />
         </Link>
 
-        <CustomButton
+        {/* <CustomButton
           title='Sign in'
           containerStyles='text-primary-blue rounded-full bg-white min-w-[130px]'
-        />
+        /> */}
       </nav>
     </header>
   );
